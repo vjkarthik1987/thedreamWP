@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/header.ejs') %>
+
+    <title>500+ Employee Engagement Examples for Employee Engagement</title>
+
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <%- include ('partials/nav.ejs') %>
+
+    <!--Examples Hero -->
+    <div class="independent-hero">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-row align-items-center g-5 py-5">
+                <div class="col-lg-8 col-sm-10">
+                    <h2 class="col-lg-9 display-5 fw-bold lh-1 mb-3">Examples to inspire you</h2>
+                    <p class="lead">With more than 500 examples, get inspired from the ones that matter to you, implement them in your workplace and create the dream workplace for your employees. See all our examples at once, or find the one in line with the theme that you are looking for.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Examples Section -->
+    <div class="example-coontainer">
+        <div class="container col-xxl-8 px-4 py-3">
+            <div class="row flex-row align-items-center g-5 py-5">
+                <!-- All Examples -->
+                <div class="col-lg-8 col-sm-10  trend-holder">
+                    <a href="allExamples">
+                        <h4 class="col-lg-9 lh-1">See All Our Examples</h4>
+                    </a>
+                </div>
+                <!-- Trend Examples -->
+                <% for (const trend in trends) { %>
+                <% const path = "examples/" %>
+                <div class="col-lg-8 col-sm-10 trend-holder">
+                    <a href= <%= path.concat(trend) %>> 
+                        <h4 class="col-lg-9 lh-1"><%= trends[trend][0] %></h4>
+                    </a>
+                </div>
+                <% } %>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Surveys-->
+    <%- include ('partials/survey.ejs') %>
+
+
+    <!--Footer -->
+    <%- include ('partials/footer.ejs') %>
+</body>
+
+</html>

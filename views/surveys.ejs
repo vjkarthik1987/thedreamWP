@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/header.ejs') %>
+
+    <title>Assess your workplace with our custom surveys</title>
+
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <%- include ('partials/nav.ejs') %>
+
+    <!--Surveys Hero -->
+    <div class="independent-hero">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-row align-items-center g-5 py-5">
+                <div class="col-lg-8 col-sm-10">
+                    <h2 class="col-lg-9 display-5 fw-bold lh-1 mb-3">Comprehensive surveys for a comprehensive assessment</h2>
+                    <p class="lead">From talent acquisition, to talent compensation, take our surveys to understand where you stand vis-a-vis your goals, peers, and industry leaders. A completely free set of surveys built for every aspect of talent engagement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Surveys Section -->
+    <div class="example-coontainer">
+        <div class="container col-xxl-8 px-4 py-3">
+            <div class="row flex-row align-items-center g-5 py-5">
+                <!-- All Examples -->
+                <div class="col-lg-8 col-sm-10 ">
+                    <h3 class="col-lg-9 lh-1 mb-3">Our Methodology</h3>
+                    <p class="col-lg-12 lh-3 lead mb-2">Our surveys are comprehensive and span across all areas of a talent lifecycle. For each area of the talent lifecyle, we have a set of questions that measures the effectiveness of numerous factors that have been listed down based on several hours of research. Each assessment is tailored to the custom requirements of the organization, and is curated based on these requirements. Select from the following set of areas and let us know - and we will get back to you.</p>
+                    <p class="col-lg-12 lh-3 lead mb-2 fw-bold">How do you conduct the survey?</p>
+                    <p class="col-lg-12 lh-3 lead mb-2">Once you select the assessments you want, we will reach out to you to understand your basic requirements and curate the survey as per your needs. Once we agree on the same, we will share the survey with a custom link to the set of people identified by you. It will be an individual mail. Though the responses will not be anonymous, we will keep it anonymous from you so that the openness of the feedback is ensured. We would ideally want the survey to be run for a period of two weeks, but you can reduce it to a minimum of one week. Once the survey is complete, we will take one or two weeks to process the results and we will share the same with you as a detailed analysis.</p>
+                    <p class="col-lg-12 lh-3 lead mb-2 fw-bold">Why is the survey free?</p>
+                    <p class="col-lg-12 lh-3 lead mb-2">It is normal for the alarm bells to ring when you hear that the assessments are free. We also understand that. But hey, remember, we are a start-up. And we believe that the fees that we are foregoing is part of our marketing budget. Rest assured, our assessments will be worth your investment in time and effort.</p>
+                    <p class="col-lg-12 lh-3 lead mb-2 fw-bold">What will I get from the assessment?</p>
+                    <p class="col-lg-12 lh-3 lead mb-2">You will get a customized report that will detail out your strong areas and weak areas based on the response. We would also share some best practices which we believe can improve the scores going forward. We will stop there as we do not offer any consulting approach. Also, one more thing. At this moment, we do not offer any benchmarks since we are starting off and we will require a few more months to get the information in place.</p>
+                    <p class="col-lg-12 lh-3 lead mb-2 fw-bold">Is our data safe?</p>
+                    <p class="col-lg-12 lh-3 lead mb-2">Your data is completely safe and we will not mention your information to anyone - either in the public domain or in any private conversation. You can trust us on that.</p>
+                    <p class="col-lg-12 lh-3 lead mb-2 fw-bold">Why are you using Google Forms?</p>
+                    <p class="col-lg-12 lh-3 lead mb-2">We are starting out and we are figuring out the best survey platforms out there. And in the long run, we want to build our own survey platform. In the meanwhile, we want to keep our costs in control and hence we want to leverage the ease, power, and flexibility of Google - which is not just scalable, but also secure and trust-worthy. And there is also the small feature about cost - The Basic plan of SurveyMonkey with limited features and with an upper limit of only 1,000 responses per month costs nearly INR 8000 - we would rather spend that money on building content and adding more examples.</p>
+                    <p class="col-lg-12 lh-3 lead mb-2 fw-bold">How can I start the survey?</p>
+                    <p class="col-lg-12 lh-3 lead mb-2">Just fill out this form or you can mail us at <a href="mailto:contactus@thedreamworkplace.com">contactus@thedreamworkplace.com</a> for more details.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Survey Details Section -->
+    <div id="survey-details">
+        <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="/img/dashboard.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="auto" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="display-5 fw-bold lh-1 mb-3">Our areas of assessment</h2>
+                <% areas.forEach(function(area){ %>
+                <p class="lead d-inline"><%= area %> <b>|</b></p>
+                <% }) %>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--Footer -->
+    <%- include ('partials/footer.ejs') %>
+</body>
+
+</html>

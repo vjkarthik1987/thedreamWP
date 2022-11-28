@@ -1,0 +1,22 @@
+const areas = ["Hiring", 
+              "Onboarding",
+              "Performance Management",
+               "Goal Setting",
+              "Rewards, Compensation, and Perks",
+              "Celebrations",
+              "Recognizing",
+               "Strategy and Analytics",
+              "Communication",
+              "Gathering Feedback",
+              "Collaboration",
+              "Addressing Concerns", 
+              "Promotions",
+              "Learning and Development",
+              "Work-life integration",
+              "Giving back to the community",
+              "Engaging",
+              "Branding",
+              "Policies and processes",
+              "Off-boarding and after-exit",]
+
+module.exports = areas;

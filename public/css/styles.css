@@ -1,0 +1,119 @@
+/*Bootstrap classes */
+
+.navbar-light .navbar-nav .nav-link {
+    color: #001253;
+}
+
+.nav-item {
+    margin-right: 5px;
+}
+
+.btn-primary {
+    background-color: #E14D2A;
+    border: 1px solid #E14D2A;
+    color: white;
+}
+
+.btn-outline-secondary {
+    border: 1px solid #E14D2A;
+    color: #E14D2A;
+}
+
+
+/*Standard elements*/
+
+body {
+    background-color: white;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    color: #E14D2A;
+}
+
+h2 {
+    color: #E14D2A;
+}
+
+h5 {
+    border-left: 5px solid #E14D2A;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+a h4{
+    color: black;
+    text-decoration: underline;
+}
+
+div h5{
+    transition: background-color 1s;
+    transition-timing-function: ease-in;
+}
+
+div h5:hover {
+    background-color: #F6F6C9;
+}
+
+
+
+/*Special classes*/
+.logo-image {
+    margin-bottom: 10px;
+}
+
+.blog-holder {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.blog-holder h4{
+    color: #E14D2A;
+}
+
+.blog-holder a{
+    text-transform: uppercase;
+    color: #E14D2A;
+    font-weight: bold;
+}
+
+.independent-hero {
+    background-color: #DDDDDD;
+    border-bottom: 2px solid #CCCCCC;
+}
+
+.chapter-holder h4 {
+    color: #E14D2A;
+}
+
+.chapter-holder a{
+    text-decoration: none;
+    border-bottom: 1px solid grey;
+    padding-bottom: 2px;
+    
+}
+
+.example-holder>:first-child{
+    color: #E14D2A;
+    text-decoration: none;
+}
+
+.faq-holder h4 {
+    padding-left: 5px;
+    border-left: 5px solid #E14D2A;
+    
+}
+
+.service-holder{
+    padding-left: 10px;
+    background-color: #DDDDDD;
+}
+
+
+/* IDs */
+#hero,
+#examples,
+#surveys, 
+#survey-details{
+    background-color: #DDDDDD;
+}
