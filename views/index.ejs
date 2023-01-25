@@ -14,106 +14,74 @@
 
 
     <!--Hero Section -->
-    <div class="px-4 py-5 my-2 text-center" id="hero">
-        <img class="d-block mx-auto mb-4" src="img/moon.png" alt="Logo of The Dream Workplace" width="144" height="auto">
-        <h1 class="display-2 fw-bold">The Dream Workplace</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="fs-4">We are on a mission to make today's workplaces more engaging and fun - the way many people dream them to be. With more than <b>1000+ insights and real-world examples</b>, learn from and be inspired by the world's leading companies. </p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <a href="/examples"><button type="button" class="btn btn-primary btn-lg px-4 gap-3">See Examples</button></a>
-                <a href="/blogs"><button type="button" class="btn btn-outline-secondary btn-lg px-4">See the themes</button></a>
+    <div class="container col-xxl-8 px-4 py-3">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-12 col-sm-12 col-lg-7">
+                <img src="/img/hero.jpg" class="d-block mx-lg-auto img-fluid" alt="The Dream Workplace" width="100%" height="auto" loading="lazy" style="border-radius:5px">
+            </div>
+            <div class="col-lg-5">
+                <h1 class="display-4 fw-bold lh-1 mb-3">The Dream Workplace</h1>
+                <p class="lead">On a mission to make today's workplaces the way people dream them to be - <b>engaging, fun, fair, personal, and purpose-driven </b>through customized surveys and and exhaustive examples.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="/surveys"><button type="button" class="btn btn btn-primary btn-lg px-4 gap-3">Start surveys</button></a>
+                    <a href="/examples"><button type="button" class="btn btn-outline-secondary btn-lg px-4 gap-3">See Examples</button></a>
+                </div>
             </div>
         </div>
     </div>
-
-    <!--Blogs -->
-    <div class="px-4 py-2" id="blogs">
+    <!--Surveys-->
+    <%- include ('partials/survey.ejs') %>
+    
+    <!--Themes Section -->
+    <div class="px-4 py-5" id="themes">
         <div class="container col-xl-10 col-xxl-8">
             <div class="row align-items-top g-lg-5 py-5">
-                <div class="col-lg-6 text-left text-lg-start">
-                    <h2 class="display-6 fw-bold">The latest blogs</h2>
-                </div>
-                <div class="col-lg-12 text-left text-lg-start">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <div class="col  text-left mb-3">
-                                <div class="blog-holder">
-                                    <h4>The case for a shorter workweek</h4>
-                                    <p class="text-muted">02 Nov 2022</p>
-                                    <p>Why should we work from 9 to 5 from Monday to Friday? Is it not a time for a change?</p>
-                                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-start mb-2">
-                                        <a href="/changeDetail">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col text-left mb-3">
-                                <div class="blog-holder">
-                                    <h4>How much do you trust?</h4>
-                                    <p class="text-muted">01 Nov 2022</p>
-                                    <p>It is time that organizations start trusting employees a bit more, or in fact, a whole lot more. And then they will get the trust back.</p>
-                                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-start mb-2">
-                                        <a href="/changeDetail">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="col mb-3">
-                                <div class="blog-holder">
-                                    <h4>The 10 trends in detail</h4>
-                                    <p class="text-muted">31 Oct 2022</p>
-                                    <p>The details about the ten trends that has happened in then last few years.</p>
-                                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-start mb-2">
-                                        <a href="/changeDetail">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col  mb-3">
-                                <div class="blog-holder">
-                                    <h4>The change in employee mindset</h4>
-                                    <p class="text-muted">30 Oct 2022</p>
-                                    <p>At TDW, we believe that the foundation of this transition is hinged on ten changes that have happened quietly in an employee's mindset over the last few decades.</p>
-                                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-start mb-2">
-                                        <a href="/change10">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="col text-left mb-3">
-                                <div class="blog-holder">
-                                    <h4>First Blog</h4>
-                                    <p class="text-muted">29 Oct 2022</p>
-                                    <p>The essential first post. Hello World. We are live. Our first ever content. Thanks for reading</p>
-                                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-start mb-2">
-                                        <a href="/firstBlog">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-lg-6 text-left text-lg-start" style="border:1px solid #DDDDDD">
+                    <h2 class="display-6 fw-bold">What makes a dream workplace?</h2>
+                    <div class="mx-auto">
+                        <p class="fs-5 fw-bold">AKA The 12 Themes we believe is redefining the workplace</p>
+                        <p class="fs-5 mb-4">Twenty years ago, mobiles were a new phenomenom. Today they are everywhere. Sadly, we have not seen such a transformation in the world of work. At TDW, we have identified 12 talent engagement themes wthat have undergone a major shift in the last two decades, which are essential to creating a dream workplace for all. These themes focus on making the workplace engaging, fun, fair, personal, and purpose-driven. Read on to find out more.</p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-start mb-5">
+                            <a href="/themes"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Read more</button></a>
+                            <a href="/examples"><button type="button" class="btn btn-outline-secondary btn-lg px-4">See examples</button></a>
                         </div>
                     </div>
                 </div>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-start mb-5">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Read more blogs</button>
+                <div class="col-md-10 mx-auto col-lg-6 py-2">
+                    <div class="d-grid gap-2 justify-content-sm-center mb-5">
+                        <h5 class="fw-bold lh-1 mb-3 px-3">From control to trust &amp; accountability</h5>
+                        <h5 class="fw-bold lh-1 mb-3 px-3">From rules to guides</h5>
+                        <h5 class="fw-bold lh-1 mb-3 px-3">From hiring to integration</h5>
+                        <h5 class="fw-bold lh-1 mb-3 px-3">From hierarchy to teams</h5>
+                        <h5 class="fw-bold lh-1 mb-3 px-3">From timesheets to effort &amp; outcomes</h5>
+                        <h5 class="fw-bold lh-1 mb-3 px-3">From resources to partners</h5>
+                        <h5 class="fw-bold lh-1 mb-3 px-3">From wages and bonuses to total rewards</h5>
+                        <h5 class="fw-bold lh-1 mb-3 px-3">From promotions to growth and mastery</h5>
+                        <h5 class="fw-bold lh-1 mb-3 px-3">From secrecy to openness</h5>
+                        <h5 class="fw-bold lh-1 mb-3 px-3">From work-life balance to work-life integration</h5>
+                        <h5 class="fw-bold lh-1 mb-3 px-3">From rigidity to agility</h5>
+                        <h5 class="fw-bold lh-1 mb-3 px-3">From maximum profit to optimum delight</h5>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+
+
     <!-- Examples Section -->
-    <div id="examples">
-        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div id="example">
+        <div class="container col-xl-10 col-xxl-8 px-4 py-3">
             <div class="row align-items-center g-lg-5 py-5">
                 <div class="col-lg-7 text-center text-lg-start">
-                    <h2 class="display-6 fw-bold lh-1 mb-3">1000+ Real World Examples</h2>
-                    <p class="col-lg-10 fs-4">Our list of examples includes a collection of best practices and initiatives practiced by companies that are small, medium, and large, but great in employee engagement and performance. Read them, learn from them, and implement them in your organizaiton.</p>
+                    <h2 class="display-6 fw-bold lh-1 mb-3">Comprehensive Real World Examples</h2>
+                    <p class="col-lg-10 fs-4">Our list of examples includes a collection of the best practices and initiatives used by companies that are successful and great in employee engagement. Read them, learn from them, and implement them in your organizaiton.</p>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center justify-content-lg-start pb-4">
                         <a href="/allExamples"><button type="button" class="btn btn-primary btn-lg px-4 gap-3">See All Examples</button></a>
                         <a href="/examples"><button type="button" class="btn btn-secondary btn-lg px-4 gap-3">Examples by Themes</button></a>
                     </div>
                 </div>
-                <div class="col-md-10 mx-auto col-lg-5">
+                <div class="col-md-10 mx-auto col-lg-5" style="border:1px solid #DDDDDD">
                     <div>
                         <div class="row">
                             <div class="col-sm-4">
@@ -158,45 +126,6 @@
             </div>
         </div>
     </div>
-
-
-
-    <!--Themes Section -->
-    <div class="px-4 py-5" id="themes">
-        <div class="container col-xl-10 col-xxl-8">
-            <div class="row align-items-top g-lg-5 py-5">
-                <div class="col-lg-6 text-left text-lg-start">
-                    <h2 class="display-6 fw-bold">The 12 themes</h2>
-                    <div class="mx-auto">
-                        <p class="fs-5 mb-4">Twenty years ago, mobiles were a new phenomenom. Today they are everywhere. Sadly, we have not seen such a transformation in the world of work. And we are out to correct it. We have identified 12 themes with regards to talent engagement that have undergone a major shift in the last two decades. These trends are spread across the talent engagement lifecycle. Read on to find out more.</p>
-                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-start mb-5">
-                            <a href="/themes"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Read more</button></a>
-                            <a href="/examples"><button type="button" class="btn btn-outline-secondary btn-lg px-4">See examples</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-10 mx-auto col-lg-6">
-                    <div class="d-grid gap-2 justify-content-sm-center mb-5">
-                        <h5 class="fw-bold lh-1 mb-3 px-3">From control to trust &amp; accountability</h5>
-                        <h5 class="fw-bold lh-1 mb-3 px-3">From rules to guides</h5>
-                        <h5 class="fw-bold lh-1 mb-3 px-3">From hiring to integration</h5>
-                        <h5 class="fw-bold lh-1 mb-3 px-3">From hierarchy to teams</h5>
-                        <h5 class="fw-bold lh-1 mb-3 px-3">From timesheets to effort &amp; outcomes</h5>
-                        <h5 class="fw-bold lh-1 mb-3 px-3">From resources to partners</h5>
-                        <h5 class="fw-bold lh-1 mb-3 px-3">From wages and bonuses to total rewards</h5>
-                        <h5 class="fw-bold lh-1 mb-3 px-3">From promotions to growth and mastery</h5>
-                        <h5 class="fw-bold lh-1 mb-3 px-3">From secrecy to openness</h5>
-                        <h5 class="fw-bold lh-1 mb-3 px-3">From work-life balance to work-life integration</h5>
-                        <h5 class="fw-bold lh-1 mb-3 px-3">From rigidity to agility</h5>
-                        <h5 class="fw-bold lh-1 mb-3 px-3">From maximum profit to optimum delight</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Surveys-->
-    <%- include ('partials/survey.ejs') %>
 
     <!--Footer -->
     <%- include ('partials/footer.ejs') %>
