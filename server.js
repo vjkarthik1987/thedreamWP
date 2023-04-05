@@ -198,6 +198,10 @@ app.get("/okrs", (req, res) => {
     res.render("okrs");
 });
 
+app.get("/surveyForm", (req,res) => {
+    res.render("surveyForm");
+})
+
 //////////////Workshops
 app.get("/workshops", (req, res) => {
     res.render("workshops");
@@ -205,6 +209,6 @@ app.get("/workshops", (req, res) => {
 
 
 //App Listen
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Server started successfully");
 });

@@ -4,7 +4,7 @@
 <head>
     <%- include('partials/header.ejs') %>
 
-    <title>The Dream Workplace - Get your engagement right</title>
+    <title>The Dream Workplace - Get your engagement right through surveys and examples</title>
 
 </head>
 
@@ -14,36 +14,53 @@
 
 
     <!--Hero Section -->
-    <div class="container col-xxl-8 px-4 py-3">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-12 col-sm-12 col-lg-7">
-                <img src="/img/hero.jpg" class="d-block mx-lg-auto img-fluid" alt="The Dream Workplace" width="100%" height="auto" loading="lazy" style="border-radius:5px">
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-row-reverse align-items-center g-5 py-3">
+            <div class="col-lg-6 text-sm-center text-lg-end">
+                <h1 class="display-2 fw-bold lh-1 mb-5">The Dream Workplace</h1>
+                <h3 class="fw-bold lh-2 mb-4">World's Most Comprehensive, World's First Customized Employee Surveys</h3>
+                <p class="lead">Make your organization the way your talent dreams <b><em>engaging, fun, fair, personal, and purpose-driven</em></b> - through the world's first ever customized surveys. <br><br> Understand where you stand, and learn from real world examples. Take our assessments now.</p>
+                <div class="d-grid gap-2 d-flex justify-content-lg-end justify-content-sm-center">
+                    <a href="/surveys"><button type="button" class="btn btn btn-primary px-4 gap-1" style="min-width:180px">Use our surveys</button></a>
+                    <a href="/examples"><button type="button" class="btn btn-outline-secondary px-4 gap-1" style="min-width:180px">See examples</button></a>
+                </div>
             </div>
-            <div class="col-lg-5">
-                <h1 class="display-4 fw-bold lh-1 mb-3">The Dream Workplace</h1>
-                <p class="lead">On a mission to make today's workplaces the way people dream them to be - <b>engaging, fun, fair, personal, and purpose-driven </b>through customized surveys and and exhaustive examples.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a href="/surveys"><button type="button" class="btn btn btn-primary btn-lg px-4 gap-3">Start surveys</button></a>
-                    <a href="/examples"><button type="button" class="btn btn-outline-secondary btn-lg px-4 gap-3">See Examples</button></a>
+            <div class="col-12 col-sm-12 col-lg-6">
+                <img src="/img/hero.jpg" class="d-block mx-lg-auto img-fluid animate__animated animate__bounce" alt="The Dream Workplace" width="100%" height="auto" loading="lazy" style="border-radius:5px">
+            </div>
+            
+        </div>
+    </div>
+    
+    <!--About The Dream Workplace -->
+    <div id="about">
+        <div class="container col-xl-8 col-xxl-8 px-4 py-3" style="border-top: 1px solid #DDDDDD">
+            <div class="row align-items-center g-lg-12 py-5">
+                <div class="col-lg-12 text-center text-lg-center">
+                    <h2 class="display-6 fw-bold lh-1 mb-3">What is <em>The Dream Workplace</em>?</h2>
+                    <p class="col-lg-12 fs-4">The Dream Workplace is an organization that aims to help create dream workplaces through customized and comprehensive talent surveys. Whether you are a CEO or a team lead, take our assessments, or learn more from our examples.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center justify-content-lg-center py-4">
+                        <a href="/surveys"><button type="button" class="btn btn-primary btn px-4 gap-1">Tell me more </button></a>
+                        <a href="/examples"><button type="button" class="btn btn-secondary btn px-4 gap-1">See Examples</button></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!--Surveys-->
     <%- include ('partials/survey.ejs') %>
-    
+
     <!--Themes Section -->
-    <div class="px-4 py-5" id="themes">
+    <div class="px-4 py-5" id="themes" >
         <div class="container col-xl-10 col-xxl-8">
-            <div class="row align-items-top g-lg-5 py-5">
-                <div class="col-lg-6 text-left text-lg-start" style="border:1px solid #DDDDDD">
+            <div class="row align-items-top g-lg-5 py-3">
+                <div class="col-lg-6 text-left text-lg-start">
                     <h2 class="display-6 fw-bold">What makes a dream workplace?</h2>
                     <div class="mx-auto">
-                        <p class="fs-5 fw-bold">AKA The 12 Themes we believe is redefining the workplace</p>
-                        <p class="fs-5 mb-4">Twenty years ago, mobiles were a new phenomenom. Today they are everywhere. Sadly, we have not seen such a transformation in the world of work. At TDW, we have identified 12 talent engagement themes wthat have undergone a major shift in the last two decades, which are essential to creating a dream workplace for all. These themes focus on making the workplace engaging, fun, fair, personal, and purpose-driven. Read on to find out more.</p>
+                        <p class="fs-5 fw-bold">We believe that rise of the 12 transitional themese is what makes a dream workplace</p>
+                        <p class="fs-5 mb-4">Twenty years ago, mobiles were a new phenomenom. Today they are everywhere creating a diruptive shift in the way we communicate and interact with each other. Sadly, we have not seen such a disruptive transformation in the world of work even though the need for such a shift has been long overdue. At The Dream Workplace, we believe that the dream workplace of this era will be defined by the success in understanding the shift in the 12 engagement themes that we have identified. Understanding the fundamentals of these themes will help organizations make the workplace engaging, fun, fair, personal, and purpose-driven. They form the basis of our surveys, and have been designed based on research by organizational behaviour and psychology experts.</p>
                         <div class="d-grid gap-2 d-sm-flex justify-content-sm-start mb-5">
-                            <a href="/themes"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Read more</button></a>
-                            <a href="/examples"><button type="button" class="btn btn-outline-secondary btn-lg px-4">See examples</button></a>
+                            <a href="/themes"><button type="button" class="btn btn-primary btn px-4 me-sm-3" style="min-width:240px">Learn more</button></a>
                         </div>
                     </div>
                 </div>
@@ -70,59 +87,59 @@
 
 
     <!-- Examples Section -->
-    <div id="example">
-        <div class="container col-xl-10 col-xxl-8 px-4 py-3">
-            <div class="row align-items-center g-lg-5 py-5">
-                <div class="col-lg-7 text-center text-lg-start">
+    <div id="example" style="background-color: #DDDDDD">
+        <div class="container col-xl-12 col-xxl-8 px-4 py-3">
+            <div class="row align-items-center g-lg-12 py-5">
+                <div class="col-lg-12 text-center text-lg-center">
                     <h2 class="display-6 fw-bold lh-1 mb-3">Comprehensive Real World Examples</h2>
-                    <p class="col-lg-10 fs-4">Our list of examples includes a collection of the best practices and initiatives used by companies that are successful and great in employee engagement. Read them, learn from them, and implement them in your organizaiton.</p>
-                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center justify-content-lg-start pb-4">
-                        <a href="/allExamples"><button type="button" class="btn btn-primary btn-lg px-4 gap-3">See All Examples</button></a>
-                        <a href="/examples"><button type="button" class="btn btn-secondary btn-lg px-4 gap-3">Examples by Themes</button></a>
+                    <p class="col-lg-12 fs-4">Our list of examples includes a collection of the best practices and initiatives used by companies that are successful and great in employee engagement. Read them, learn from them, and implement them in your organizaiton.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center justify-content-lg-center py-4">
+                        <a href="/allExamples"><button type="button" class="btn btn-primary btn px-4 gap-1">See All the Examples</button></a>
+                        <a href="/examples"><button type="button" class="btn btn-secondary btn px-4 gap-1">Examples by Themes</button></a>
                     </div>
                 </div>
-                <div class="col-md-10 mx-auto col-lg-5" style="border:1px solid #DDDDDD">
+                <!--<div class="col-md-10 mx-auto col-lg-5 d-none d-md-block d-lg-block" >
                     <div>
-                        <div class="row">
+                        <div class="row  py-3">
                             <div class="col-sm-4">
-                                <img class="d-block mx-auto mb-4" src="img/logos/automaticc.png" width="100%" height="auto">
+                                <img class="d-block mx-auto mb-4" src="img/logos/automaticc.png" width="70%" height="auto">
                             </div>
                             <div class="col-sm-4">
-                                <img class="d-block mx-auto mb-4" src="img/logos/basecamp.png" width="100%" height="auto">
+                                <img class="d-block mx-auto mb-4" src="img/logos/basecamp.png" width="70%" height="auto">
                             </div>
                             <div class="col-sm-4">
-                                <img class="d-block mx-auto mb-4" src="img/logos/dreamwork.png" width="100%" height="auto">
+                                <img class="d-block mx-auto mb-4" src="img/logos/dreamwork.png" width="70%" height="auto">
                             </div>
                             <div class="col-sm-4">
-                                <img class="d-block mx-auto mb-4" src="img/logos/google.png" width="100%" height="auto">
+                                <img class="d-block mx-auto mb-4" src="img/logos/google.png" width="70%" height="auto">
                             </div>
                             <div class="col-sm-4">
-                                <img class="d-block mx-auto mb-4" src="img/logos/hubspot.png" width="100%" height="auto">
+                                <img class="d-block mx-auto mb-4" src="img/logos/hubspot.png" width="70%" height="auto">
                             </div>
                             <div class="col-sm-4">
-                                <img class="d-block mx-auto mb-4" src="img/logos/medium.png" width="100%" height="auto">
+                                <img class="d-block mx-auto mb-4" src="img/logos/medium.png" width="70%" height="auto">
                             </div>
                             <div class="col-sm-4">
-                                <img class="d-block mx-auto mb-4" src="img/logos/microsoft.png" width="100%" height="auto">
+                                <img class="d-block mx-auto mb-4" src="img/logos/microsoft.png" width="70%" height="auto">
                             </div>
                             <div class="col-sm-4">
-                                <img class="d-block mx-auto mb-4" src="img/logos/netflix.png" width="100%" height="auto">
+                                <img class="d-block mx-auto mb-4" src="img/logos/netflix.png" width="70%" height="auto">
                             </div>
                             <div class="col-sm-4">
-                                <img class="d-block mx-auto mb-4" src="img/logos/patagonia.svg" width="100%" height="auto">
+                                <img class="d-block mx-auto mb-4" src="img/logos/patagonia.svg" width="70%" height="auto">
                             </div>
                             <div class="col-sm-4">
-                                <img class="d-block mx-auto mb-4" src="img/logos/spotify.png" width="100%" height="auto">
+                                <img class="d-block mx-auto mb-4" src="img/logos/spotify.png" width="70%" height="auto">
                             </div>
                             <div class="col-sm-4">
-                                <img class="d-block mx-auto mb-4" src="img/logos/starbucks.png" width="100%" height="auto">
+                                <img class="d-block mx-auto mb-4" src="img/logos/starbucks.png" width="70%" height="auto">
                             </div>
                             <div class="col-sm-4">
-                                <img class="d-block mx-auto mb-4" src="img/logos/valve.png" width="100%" height="auto">
+                                <img class="d-block mx-auto mb-4" src="img/logos/valve.png" width="70%" height="auto">
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
