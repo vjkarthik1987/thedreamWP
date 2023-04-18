@@ -207,6 +207,13 @@ app.get("/workshops", (req, res) => {
     res.render("workshops");
 });
 
+//////////////Pricing
+app.get("/pricing", (req, res) => {
+    res.render("pricing", {
+        areas: areas
+    })
+});
+
 
 //App Listen
 app.listen(process.env.PORT || 3000, () => {

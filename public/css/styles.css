@@ -20,6 +20,11 @@
     color: #E14D2A;
 }
 
+.nav-link {
+    font-size: 0.9em;
+    margin: 0 1px;
+}
+
 
 /*Standard elements*/
 
@@ -61,6 +66,10 @@ div h5:hover {
 /*Special classes*/
 .logo-image {
     margin-bottom: 10px;
+}
+
+.hero-img {
+    transform: rotate(-3deg);
 }
 
 .blog-holder {
