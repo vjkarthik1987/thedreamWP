@@ -207,6 +207,11 @@ app.get("/workshops", (req, res) => {
     res.render("workshops");
 });
 
+//////////////Consulting
+app.get("/consulting", (req, res) => {
+    res.render("consulting");
+});
+
 //////////////Pricing
 app.get("/pricing", (req, res) => {
     res.render("pricing", {
