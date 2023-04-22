@@ -219,6 +219,10 @@ app.get("/pricing", (req, res) => {
     })
 });
 
+////////////////////Aspiration
+app.get("/aspiration", (req, res) => {
+    res.render("aspiration");
+})
 
 //App Listen
 app.listen(process.env.PORT || 3000, () => {
